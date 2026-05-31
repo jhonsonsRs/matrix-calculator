@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* QMainWindow ou widget raiz */
+QWidget#centralWidget {
+    background-color: #1a1a2e;
+}
+
+/* Labels de título das matrizes */
+QLabel#labelMatrizA, QLabel#labelMatrizB {
+    color: #7c6af0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+QLabel#labelTitle {
+    color: #e2e8f0;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+/* Frames/GroupBox que envolvem cada matriz */
+QGroupBox {
+    background-color: #16213e;
+    border: 1px solid #2d3561;
+    border-radius: 12px;
+    padding: 12px;
+    color: #a8b4d8;
+}
+
+/* Campos de entrada das células */
+QLineEdit {
+    background-color: #1a1a2e;
+    border: 1px solid #2d3561;
+    border-radius: 4px;
+    color: #a8b4d8;
+    font-family: &quot;Courier New&quot;;
+    font-size: 13px;
+    padding: 4px;
+}
+QLineEdit:focus {
+    border-color: #7c6af0;
+    color: #e2e8f0;
+}
+
+/* SpinBoxes de rows/cols */
+QSpinBox {
+    background-color: #0f3460;
+    border: 1px solid #2d3561;
+    border-radius: 6px;
+    color: #7c6af0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+QSpinBox::up-button, QSpinBox::down-button {
+    background: #2d3561;
+    border-radius: 3px;
+}
+
+/* Botões de operação A+B, A-B, A*B */
+QPushButton#btnAdd {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:1, stop:0 #7c6af0, stop:1 #5a4fcf);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+QPushButton#btnSub {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:1, stop:0 #e86c6c, stop:1 #c94040);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+QPushButton#btnMul {
+    background: qlineargradient(x1:0,y1:0,x2:1,y2:1, stop:0 #4caf87, stop:1 #2e8b6a);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 16px;
+}
+QPushButton:hover { opacity: 0.85; }
+
+/* Botões secundários (Transposta, Det, Multiplicar por) */
+QPushButton#btnTransposta, QPushButton#btnDet, QPushButton#btnScalar {
+    background-color: transparent;
+    border: 1px solid #2d3561;
+    border-radius: 6px;
+    color: #a8b4d8;
+    font-size: 11px;
+    padding: 5px 10px;
+}
+QPushButton#btnTransposta:hover, QPushButton#btnDet:hover {
+    background-color: #2d3561;
+    color: #e2e8f0;
+}
+
+/* Área de resultado */
+QTableWidget, QTextEdit#resultArea {
+    background-color: #0f3460;
+    border: 1px solid rgba(76, 175, 135, 0.25);
+    border-radius: 8px;
+    color: #4caf87;
+    font-family: &quot;Courier New&quot;;
+    font-size: 13px;
+    font-weight: bold;
+    gridline-color: #2d3561;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lb_title">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Matrix Calculator</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableA">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>110</y>
+      <width>311</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableB">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>110</y>
+      <width>311</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMatrixA_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>80</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Matriz A</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMatrixB">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>80</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Matriz B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSum">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>150</y>
+      <width>90</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A + B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSubtract">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>200</y>
+      <width>90</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A - B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnMultiply">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>250</y>
+      <width>90</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A * B</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinRowsA">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>360</y>
+      <width>61</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinColsA">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>360</y>
+      <width>61</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbRowsA">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>390</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ROWS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbColsA">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>390</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COLS</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinRowsB">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>360</y>
+      <width>61</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbColsB">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>390</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>COLS</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinColsB">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>360</y>
+      <width>61</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbRowsB">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>390</y>
+      <width>41</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ROWS</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableResult">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>470</y>
+      <width>291</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbMatrixResult">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>430</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Result</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbErrorText">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>360</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btTransposeA">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>420</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Transposta</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btMultiplyA">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>420</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Multiplicar por:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinValueA">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>420</y>
+      <width>51</width>
+      <height>30</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btDeterminantA">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>450</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Determinante</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btTransposeB">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>420</y>
+      <width>110</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Transposta</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinValueB">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>420</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btDeterminantB">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>450</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Determinante</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btMultiplyB">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>420</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Multiplicar por:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
