@@ -181,7 +181,7 @@ build MatrixCalculator_autogen/timestamp MatrixCalculator_autogen/mocs_compilati
 #############################################
 # Phony custom command for CMakeFiles/MatrixCalculator_autogen_timestamp_deps
 
-build CMakeFiles/MatrixCalculator_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MatrixCalculator_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc
+build CMakeFiles/MatrixCalculator_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MatrixCalculator_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 /usr/lib/qt6/libexec/uic /usr/lib/qt6/libexec/moc
 
 
 #############################################

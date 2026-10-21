@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "exercises.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,33 +19,32 @@ public:
     ~MainWindow();
 
 private slots:
+    // calculadora
     void on_btnSum_clicked();
-
+    void on_btnSubtract_clicked();
+    void on_btnMultiply_clicked();
+    void on_btMultiplyA_clicked();
+    void on_btMultiplyB_clicked();
+    void on_btTransposeA_clicked();
+    void on_btTransposeB_clicked();
+    void on_btDeterminantA_clicked();
+    void on_btDeterminantB_clicked();
+    void on_btInverseA_clicked();
+    void on_btInverseB_clicked();
     void on_spinRowsA_valueChanged(int arg1);
-
     void on_spinColsA_valueChanged(int arg1);
-
     void on_spinRowsB_valueChanged(int arg1);
-
     void on_spinColsB_valueChanged(int arg1);
 
-    void on_btnSubtract_clicked();
-
-    void on_btnMultiply_clicked();
-
-    void on_btMultiplyA_clicked();
-
-    void on_btMultiplyB_clicked();
-
-    void on_btTransposeA_clicked();
-
-    void on_btTransposeB_clicked();
-
-    void on_btDeterminantA_clicked();
-
-    void on_btDeterminantB_clicked();
+    // exercícios
+    void on_btNewExercise_clicked();
+    void on_btCheck_clicked();
+    void on_btSolution_clicked();
 
 private:
     Ui::MainWindow *ui;
+    Exercise currentEx;
+    bool hasExercise = false;
+    int hits = 0, misses = 0;
 };
 #endif // MAINWINDOW_H

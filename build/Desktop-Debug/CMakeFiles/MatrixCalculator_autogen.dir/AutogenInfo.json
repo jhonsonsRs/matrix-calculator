@@ -217,9 +217,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/joao-emanuel/MatrixCalculator/exercises.h",
+			"MU",
+			"EWIEGA46WW/moc_exercises.cpp",
+			null
+		],
+		[
 			"/home/joao-emanuel/MatrixCalculator/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/home/joao-emanuel/MatrixCalculator/matrix.h",
+			"MU",
+			"EWIEGA46WW/moc_matrix.cpp",
 			null
 		]
 	],

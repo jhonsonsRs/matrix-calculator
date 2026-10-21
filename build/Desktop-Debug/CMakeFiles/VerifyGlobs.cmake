@@ -66,7 +66,9 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/joao-emanuel/MatrixCalc
 set(OLD_GLOB
   "/home/joao-emanuel/MatrixCalculator/build/Desktop-Debug/MatrixCalculator_autogen/include/ui_mainwindow.h"
   "/home/joao-emanuel/MatrixCalculator/build/Desktop-Debug/MatrixCalculator_autogen/moc_predefs.h"
+  "/home/joao-emanuel/MatrixCalculator/exercises.h"
   "/home/joao-emanuel/MatrixCalculator/mainwindow.h"
+  "/home/joao-emanuel/MatrixCalculator/matrix.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
