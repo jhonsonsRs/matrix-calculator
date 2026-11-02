@@ -138,8 +138,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lb_title">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>40</y>
+      <x>440</x>
+      <y>50</y>
       <width>171</width>
       <height>21</height>
      </rect>
@@ -156,8 +156,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QTableWidget" name="tableA">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>110</y>
+      <x>60</x>
+      <y>120</y>
       <width>311</width>
       <height>241</height>
      </rect>
@@ -166,8 +166,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QTableWidget" name="tableB">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>110</y>
+      <x>660</x>
+      <y>120</y>
       <width>311</width>
       <height>241</height>
      </rect>
@@ -176,8 +176,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbMatrixA_2">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>80</y>
+      <x>170</x>
+      <y>90</y>
       <width>91</width>
       <height>17</height>
      </rect>
@@ -194,8 +194,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbMatrixB">
     <property name="geometry">
      <rect>
-      <x>840</x>
-      <y>80</y>
+      <x>760</x>
+      <y>90</y>
       <width>91</width>
       <height>17</height>
      </rect>
@@ -212,8 +212,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btnSum">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>150</y>
+      <x>470</x>
+      <y>160</y>
       <width>90</width>
       <height>36</height>
      </rect>
@@ -225,8 +225,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btnSubtract">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>200</y>
+      <x>470</x>
+      <y>210</y>
       <width>90</width>
       <height>36</height>
      </rect>
@@ -238,8 +238,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btnMultiply">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>250</y>
+      <x>470</x>
+      <y>260</y>
       <width>90</width>
       <height>36</height>
      </rect>
@@ -251,8 +251,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QSpinBox" name="spinRowsA">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>360</y>
+      <x>110</x>
+      <y>370</y>
       <width>61</width>
       <height>26</height>
      </rect>
@@ -270,8 +270,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QSpinBox" name="spinColsA">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>360</y>
+      <x>260</x>
+      <y>370</y>
       <width>61</width>
       <height>26</height>
      </rect>
@@ -289,8 +289,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbRowsA">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>390</y>
+      <x>120</x>
+      <y>400</y>
       <width>41</width>
       <height>17</height>
      </rect>
@@ -302,8 +302,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbColsA">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>390</y>
+      <x>270</x>
+      <y>400</y>
       <width>31</width>
       <height>17</height>
      </rect>
@@ -315,8 +315,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QSpinBox" name="spinRowsB">
     <property name="geometry">
      <rect>
-      <x>790</x>
-      <y>360</y>
+      <x>710</x>
+      <y>370</y>
       <width>61</width>
       <height>26</height>
      </rect>
@@ -334,8 +334,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbColsB">
     <property name="geometry">
      <rect>
-      <x>950</x>
-      <y>390</y>
+      <x>870</x>
+      <y>400</y>
       <width>31</width>
       <height>17</height>
      </rect>
@@ -347,8 +347,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QSpinBox" name="spinColsB">
     <property name="geometry">
      <rect>
-      <x>940</x>
-      <y>360</y>
+      <x>860</x>
+      <y>370</y>
       <width>61</width>
       <height>26</height>
      </rect>
@@ -366,8 +366,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbRowsB">
     <property name="geometry">
      <rect>
-      <x>800</x>
-      <y>390</y>
+      <x>720</x>
+      <y>400</y>
       <width>41</width>
       <height>17</height>
      </rect>
@@ -379,8 +379,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QTableWidget" name="tableResult">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>470</y>
+      <x>370</x>
+      <y>480</y>
       <width>291</width>
       <height>211</height>
      </rect>
@@ -389,8 +389,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbMatrixResult">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>430</y>
+      <x>480</x>
+      <y>440</y>
       <width>61</width>
       <height>31</height>
      </rect>
@@ -426,8 +426,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btTransposeA">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>420</y>
+      <x>70</x>
+      <y>430</y>
       <width>110</width>
       <height>30</height>
      </rect>
@@ -439,8 +439,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btMultiplyA">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>420</y>
+      <x>180</x>
+      <y>430</y>
       <width>140</width>
       <height>30</height>
      </rect>
@@ -452,8 +452,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QSpinBox" name="spinValueA">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>420</y>
+      <x>320</x>
+      <y>430</y>
       <width>51</width>
       <height>30</height>
      </rect>
@@ -468,8 +468,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btDeterminantA">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>450</y>
+      <x>70</x>
+      <y>460</y>
       <width>140</width>
       <height>30</height>
      </rect>
@@ -481,8 +481,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btTransposeB">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>420</y>
+      <x>680</x>
+      <y>430</y>
       <width>110</width>
       <height>30</height>
      </rect>
@@ -494,8 +494,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QSpinBox" name="spinValueB">
     <property name="geometry">
      <rect>
-      <x>1010</x>
-      <y>420</y>
+      <x>930</x>
+      <y>430</y>
       <width>51</width>
       <height>31</height>
      </rect>
@@ -504,8 +504,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btDeterminantB">
     <property name="geometry">
      <rect>
-      <x>760</x>
-      <y>450</y>
+      <x>680</x>
+      <y>460</y>
       <width>140</width>
       <height>30</height>
      </rect>
@@ -517,8 +517,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btMultiplyB">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>420</y>
+      <x>790</x>
+      <y>430</y>
       <width>140</width>
       <height>30</height>
      </rect>
@@ -530,8 +530,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btInverseA">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>450</y>
+      <x>210</x>
+      <y>460</y>
       <width>151</width>
       <height>30</height>
      </rect>
@@ -543,8 +543,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btInverseB">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>450</y>
+      <x>820</x>
+      <y>460</y>
       <width>151</width>
       <height>30</height>
      </rect>
@@ -556,8 +556,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbExerciseTitle">
     <property name="geometry">
      <rect>
-      <x>1440</x>
-      <y>90</y>
+      <x>1250</x>
+      <y>70</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -574,8 +574,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QComboBox" name="cbLevel">
     <property name="geometry">
      <rect>
-      <x>1340</x>
-      <y>130</y>
+      <x>1150</x>
+      <y>110</y>
       <width>251</width>
       <height>23</height>
      </rect>
@@ -599,8 +599,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btNewExercise">
     <property name="geometry">
      <rect>
-      <x>1600</x>
-      <y>130</y>
+      <x>1410</x>
+      <y>110</y>
       <width>101</width>
       <height>23</height>
      </rect>
@@ -612,8 +612,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbExercise">
     <property name="geometry">
      <rect>
-      <x>1270</x>
-      <y>160</y>
+      <x>1080</x>
+      <y>140</y>
       <width>450</width>
       <height>60</height>
      </rect>
@@ -631,8 +631,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbAnswerTitle">
     <property name="geometry">
      <rect>
-      <x>1450</x>
-      <y>230</y>
+      <x>1260</x>
+      <y>210</y>
       <width>101</width>
       <height>16</height>
      </rect>
@@ -644,8 +644,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QTableWidget" name="tableAnswer">
     <property name="geometry">
      <rect>
-      <x>1340</x>
-      <y>280</y>
+      <x>1150</x>
+      <y>260</y>
       <width>311</width>
       <height>241</height>
      </rect>
@@ -654,8 +654,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLineEdit" name="leAnswer">
     <property name="geometry">
      <rect>
-      <x>1420</x>
-      <y>370</y>
+      <x>1230</x>
+      <y>350</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -664,8 +664,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btCheck">
     <property name="geometry">
      <rect>
-      <x>1460</x>
-      <y>580</y>
+      <x>1270</x>
+      <y>560</y>
       <width>80</width>
       <height>23</height>
      </rect>
@@ -677,8 +677,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QPushButton" name="btSolution">
     <property name="geometry">
      <rect>
-      <x>1440</x>
-      <y>610</y>
+      <x>1250</x>
+      <y>590</y>
       <width>111</width>
       <height>23</height>
      </rect>
@@ -690,8 +690,8 @@ QTableWidget, QTextEdit#resultArea {
    <widget class="QLabel" name="lbScore">
     <property name="geometry">
      <rect>
-      <x>1450</x>
-      <y>670</y>
+      <x>1260</x>
+      <y>650</y>
       <width>131</width>
       <height>16</height>
      </rect>
